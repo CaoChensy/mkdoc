@@ -1,10 +1,37 @@
 site_name: WisEcon
 
+# Repository
+repo_name: CaoChensy/wisecon
+repo_url: https://github.com/CaoChensy/wisecon.git
+
 theme:
   name: "material"
+  language: zh
+  features:
+    - search.highlight
+    - search.suggest
+    - search.share
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - toc.integrate
+    - navigation.top
+    - navigation.footer
+    - header.autohide
+    - announce.dismiss
+  icon:
+    repo: fontawesome/brands/git-alt
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CaoChensy/wisecon.git
 
 plugins:
   - mkdocstrings
+  - search
+  - social
 
 nav:
   - WisEcon: index.md
